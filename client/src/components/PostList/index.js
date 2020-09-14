@@ -1,12 +1,12 @@
-import React from "react";
+import React from 'react';
 
-import { Container, Row, Col } from "../Grid";
+import { Container, Row, Col } from '../Grid';
 
 // Exporting both PostList and PostListItem from this file
 
 // PostList renders a bootstrap list item
 export function PostList({ children }) {
-  return <ul className="list-group">{children}</ul>;
+  return <ul className='list-group'>{children}</ul>;
 }
 
 // PostListItem renders a bootstrap list item containing data from the driver or Rider post DB call
@@ -20,15 +20,14 @@ export function PostListItem({
   seats_available,
   smoking,
   luggage,
-  comments
+  comments,
 }) {
   return (
-    <li className="list-group-item">
+    <li className='list-group-item'>
       <Container>
         <Row>
-          <Col size="xs-4 sm-2">
-                     </Col>
-          <Col size="xs-8 sm-9">
+          <Col size='xs-4 sm-2'></Col>
+          <Col size='xs-8 sm-9'>
             <h3>{title}</h3>
             <p>Start Location: {start_location}</p>
             <p>End Location: {end_location}</p>
@@ -45,5 +44,3 @@ export function PostListItem({
     </li>
   );
 }
-
-

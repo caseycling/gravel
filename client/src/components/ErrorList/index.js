@@ -1,16 +1,10 @@
-import React from 'react'
-import './style.css'
+import React from 'react';
+import './style.css';
 
 function ErrorList(props) {
-    const errors = props.errors;
-    const listItems = errors.map((error) =>
-      <h4>
-        {error}
-      </h4>
-    );
-    return (
-      <div>{listItems}</div>
-    );
-  }
+  const errors = props.errors;
+  const listItems = errors.map((error) => <h4>{error}</h4>);
+  return <div>{listItems}</div>;
+}
 
-export default ErrorList; 
+export default ErrorList;

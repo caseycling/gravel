@@ -1,31 +1,29 @@
 .navbar {
-    background-color: #FFF;
-    font-family: 'Darker Grotesque', sans-serif;
-    font-size: 30px;
-    margin-bottom: 0;
+  background-color: #fff;
+  font-family: 'Darker Grotesque', sans-serif;
+  font-size: 30px;
+  margin-bottom: 0;
 }
 
-.navbar-fixed{
-    overflow: hidden;
-    top: 0;
-    width: 100%;
-    position: fixed;
-    z-index: 1;
-    margin-bottom: 0px;
+.navbar-fixed {
+  overflow: hidden;
+  top: 0;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  margin-bottom: 0px;
 }
 
-.btn-primary{
-    /* margin: 0px 15px 0px 15px; */
-    border-radius: 12px;
-    padding: 14px 40px;
-    font-size: 20px;
+.btn-primary {
+  border-radius: 12px;
+  padding: 14px 40px;
+  font-size: 20px;
 }
 
-.navbar-brand{
-    margin: 0px 15px 0px 15px;
-    font-weight: bolder;
-    font-family: 'Darker Grotesque', sans-serif;
-    font-size: 30px;
-    /* font-weight: bold; */
-    color: black !important;
+.navbar-brand {
+  margin: 0px 15px 0px 15px;
+  font-weight: bolder;
+  font-family: 'Darker Grotesque', sans-serif;
+  font-size: 30px;
+  color: black !important;
 }

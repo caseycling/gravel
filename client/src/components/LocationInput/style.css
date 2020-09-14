@@ -1,17 +1,17 @@
 .input-group {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 #current-location {
-    display: flex;
-    align-items: center;
-    font-size: 18pt;
-    color: #18BC9C;
-    background-color: #FFF;
-    margin-left: 10px;
+  display: flex;
+  align-items: center;
+  font-size: 18pt;
+  color: #18bc9c;
+  background-color: #fff;
+  margin-left: 10px;
 }
 
 #current-location:hover {
-    background-color: #18BC9C;
-    color: #FFF;
+  background-color: #18bc9c;
+  color: #fff;
 }

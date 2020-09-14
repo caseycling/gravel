@@ -1,6 +1,6 @@
-import React, { Component, useEffect, useRef } from "react";
-import L from "leaflet";
-import "./style.css"
+import React, { Component, useEffect, useRef } from 'react';
+import L from 'leaflet';
+import './style.css';
 
 function LeafletContainer({ markerPositionStart, markerPositionEnd }) {
   // Create map
@@ -12,9 +12,9 @@ function LeafletContainer({ markerPositionStart, markerPositionEnd }) {
       layers: [
         L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
           attribution:
-            '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+            '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors',
         }),
-      ]
+      ],
     });
   }, []);
 
@@ -23,37 +23,33 @@ function LeafletContainer({ markerPositionStart, markerPositionEnd }) {
 
   // Add start marker
   const markerStartRef = useRef(null);
-  useEffect(
-    () => {
-      if (markerStartRef.current) {
-        markerStartRef.current.setLatLng(markerPositionStart);
-      } else {
-        markerStartRef.current = L.marker(markerPositionStart).addTo(mapRef.current);
-      }
+  useEffect(() => {
+    if (markerStartRef.current) {
+      markerStartRef.current.setLatLng(markerPositionStart);
+    } else {
+      markerStartRef.current = L.marker(markerPositionStart).addTo(
+        mapRef.current
+      );
+    }
 
-      markerRefBounds.push([markerPositionStart.lat, markerPositionStart.lng]);
-    },
-    [markerPositionStart]
-  );
+    markerRefBounds.push([markerPositionStart.lat, markerPositionStart.lng]);
+  }, [markerPositionStart]);
 
   // Add end marker
   const markerEndRef = useRef(null);
-  useEffect(
-    () => {
-      if (markerEndRef.current) {
-        markerEndRef.current.setLatLng(markerPositionEnd);
-      } else {
-        markerEndRef.current = L.marker(markerPositionEnd).addTo(mapRef.current);
-      }
+  useEffect(() => {
+    if (markerEndRef.current) {
+      markerEndRef.current.setLatLng(markerPositionEnd);
+    } else {
+      markerEndRef.current = L.marker(markerPositionEnd).addTo(mapRef.current);
+    }
 
-      markerRefBounds.push([markerPositionEnd.lat, markerPositionEnd.lng]);
+    markerRefBounds.push([markerPositionEnd.lat, markerPositionEnd.lng]);
 
-      mapRef.current.fitBounds(markerRefBounds);
-    },
-    [markerPositionEnd]
-  );
+    mapRef.current.fitBounds(markerRefBounds);
+  }, [markerPositionEnd]);
 
-  return <div id="map"></div>
+  return <div id='map'></div>;
 }
 
 export default LeafletContainer;

@@ -1,11 +1,15 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React from 'react';
+import { Link } from 'react-router-dom';
 
-// Can change to stateful component if need be
 function OfferRideButton(props) {
-    return (
-        <Link to={props.loggedIn === true ? "/driver-post" : "/signin"} className="btn btn-primary">Offer a ride!</Link>
-    );
+  return (
+    <Link
+      to={props.loggedIn === true ? '/driver-post' : '/signin'}
+      className='btn btn-primary'
+    >
+      Offer a ride!
+    </Link>
+  );
 }
 
 export default OfferRideButton;

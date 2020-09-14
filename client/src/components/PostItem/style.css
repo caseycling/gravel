@@ -1,6 +1,6 @@
 .post-item {
-    margin-bottom: 30px;
-    text-align: center;
+  margin-bottom: 30px;
+  text-align: center;
 }
 
 /* .post-item:hover {
@@ -8,30 +8,34 @@
 } */
 
 .post-item:hover .fa-arrow-right {
-    transition: 1.5s;
-    transform:  rotateY(180deg) rotateY(180deg);    
+  transition: 1.5s;
+  transform: rotateY(180deg) rotateY(180deg);
 }
 
-.fa-trash:hover, .fa-edit:hover, .fa-check:hover {
-    cursor: pointer;
+.fa-trash:hover,
+.fa-edit:hover,
+.fa-check:hover {
+  cursor: pointer;
 }
 
-.fa-trash, .fa-check {
-    position: absolute;
-    right: 14px;
+.fa-trash,
+.fa-check {
+  position: absolute;
+  right: 14px;
 }
 
 .fa-edit {
-    position: absolute;
-    right: 36px;
+  position: absolute;
+  right: 36px;
 }
 
 .fa-trash:hover {
-    cursor: pointer;
-    color: #FF0000;
+  cursor: pointer;
+  color: #ff0000;
 }
 
-.fa-edit:hover, .fa-check:hover {
-    cursor: pointer;
-    color: #18BC9C;
+.fa-edit:hover,
+.fa-check:hover {
+  cursor: pointer;
+  color: #18bc9c;
 }
