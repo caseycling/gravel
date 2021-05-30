@@ -75,16 +75,6 @@ require('./routes/driverAPI')(app);
 require('./routes/riderAPI')(app);
 require('./routes/opencageAPI')(app);
 
-//TO DO make route which checks username in sign up with database
-//Don't allow two user names to be created
-// app.get('/auth/signup', function (req, res) {
-//   db.User.findOne({ username: req.body.username })
-//     .then(function (user) {
-//       if(user) {
-//         return }
-//     })
-//   })
-
 app.post('/auth/signup', function (req, res) {
   console.log('posting signup');
   db.User.create(req.body)
