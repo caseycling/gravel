@@ -1,6 +1,4 @@
 const db = require('../models');
-// const {ObjectId} = require('mongodb');
-// const ObjectId = requied('mongodb').ObjectId
 
 module.exports = (app) => {
   // Get all the trip
